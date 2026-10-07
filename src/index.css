@@ -1,0 +1,62 @@
+/* Global Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  background-color: #f5f7fb;
+
+  color: #1e293b;
+
+  overflow-x: hidden;
+}
+
+/* Smooth scrolling */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Remove default button styles */
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+/* Buttons */
+
+button {
+  cursor: pointer;
+}
+
+/* Links */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Images */
+
+img {
+  max-width: 100%;
+  display: block;
+}

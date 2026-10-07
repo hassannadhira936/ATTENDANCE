@@ -1,0 +1,535 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f7f6;
+  color: #17201d;
+}
+
+button,
+input,
+select {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* =========================
+   PAGE
+========================= */
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+  background: linear-gradient(
+    135deg,
+    #eef7f2,
+    #ffffff
+  );
+}
+
+/* =========================
+   LOGO
+========================= */
+.school-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  margin-bottom: 25px;
+  gap: 20px;
+}
+
+.school-logo {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+}
+
+.school-name h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.school-name h2 {
+text-align: center;
+}
+
+/* =========================
+   ROLE CARD
+========================= */
+
+.role-card {
+  width: 100%;
+  max-width: 700px;
+  background: white;
+  padding: 45px;
+  border-radius: 22px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.welcome h1 {
+  margin-bottom: 10px;
+  font-size: 32px;
+}
+
+.welcome p {
+  color: #66736e;
+}
+
+.instruction {
+  margin-top: 25px;
+  font-weight: bold;
+  color: #26332e !important;
+}
+
+/* =========================
+   ROLE BUTTONS
+========================= */
+
+.role-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 30px;
+}
+
+.role-button {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 22px;
+  background: white;
+  border: 2px solid #dfe8e3;
+  border-radius: 16px;
+  text-align: left;
+  transition: 0.25s;
+}
+
+.role-button:hover {
+  transform: translateY(-3px);
+  border-color: #26734d;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.role-icon {
+  font-size: 35px;
+}
+
+.role-button strong {
+  display: block;
+  font-size: 18px;
+}
+
+.role-button small {
+  display: block;
+  margin-top: 5px;
+  color: #728078;
+}
+
+/* =========================
+   AUTH CARD
+========================= */
+
+.auth-card,
+.form-card {
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  padding: 40px;
+  border-radius: 22px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.08);
+}
+
+.auth-card {
+  max-width: 480px;
+}
+
+.auth-card h1,
+.form-card h1 {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.auth-subtitle {
+  text-align: center;
+  color: #75817c;
+  margin-bottom: 30px;
+}
+
+/* =========================
+   FORMS
+========================= */
+
+form {
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin: 17px 0 7px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #d6dfda;
+  border-radius: 9px;
+  outline: none;
+  font-size: 15px;
+  background: white;
+}
+
+input:focus,
+select:focus {
+  border-color: #26734d;
+  box-shadow: 0 0 0 3px rgba(38, 115, 77, 0.1);
+}
+
+.primary-button {
+  width: 100%;
+  margin-top: 25px;
+  padding: 14px;
+  border: none;
+  border-radius: 9px;
+  background: #26734d;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.primary-button:hover {
+  background: #1d5b3d;
+}
+
+.back-button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px;
+  border: none;
+  background: transparent;
+  color: #26734d;
+  font-weight: bold;
+}
+
+/* =========================
+   ADMIN ACTIONS
+========================= */
+
+.admin-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.admin-action {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #dfe7e2;
+  background: white;
+  border-radius: 13px;
+  text-align: left;
+}
+
+.admin-action:hover {
+  border-color: #26734d;
+  background: #f7fbf9;
+}
+
+.admin-action > span {
+  font-size: 30px;
+}
+
+.admin-action strong {
+  display: block;
+  font-size: 17px;
+}
+
+.admin-action small {
+  display: block;
+  color: #77827d;
+  margin-top: 5px;
+}
+
+/* =========================
+   FORM GRID
+========================= */
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px 18px;
+}
+
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard {
+  min-height: 100vh;
+  background: #f5f8f6;
+}
+
+.dashboard-header {
+  background: white;
+  padding: 15px 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e2e9e5;
+}
+
+.dashboard-header .logo-container {
+  margin: 0;
+}
+
+.dashboard-header .school-logo {
+  width: 55px;
+  height: 55px;
+}
+
+.logout-button {
+  border: none;
+  background: #b63c3c;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.dashboard-content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 25px;
+}
+
+.dashboard-content > p {
+  color: #75817c;
+}
+
+/* =========================
+   ATTENDANCE
+========================= */
+
+.attendance-card {
+  background: white;
+  max-width: 550px;
+  margin: 35px auto;
+  padding: 40px;
+  text-align: center;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.fingerprint {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 50%;
+  background: #edf7f1;
+  font-size: 45px;
+}
+
+/* =========================
+   STATS
+========================= */
+
+.stats,
+.admin-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.stats > div,
+.stat-card {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
+}
+
+.stats h3,
+.stat-card h3 {
+  margin-top: 0;
+  color: #6d7974;
+  font-size: 14px;
+}
+
+.stats strong,
+.stat-card strong {
+  font-size: 25px;
+}
+
+.admin-stats {
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 30px;
+}
+
+.stat-card span {
+  font-size: 28px;
+}
+
+/* =========================
+   EMPLOYEE SECTION
+========================= */
+
+.employee-section {
+  background: white;
+  margin-top: 30px;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.small-button {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  background: #26734d;
+  color: white;
+  font-weight: bold;
+}
+
+.table-container {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 13px;
+  border-bottom: 1px solid #e8eeeb;
+}
+
+th {
+  background: #f4f7f5;
+}
+
+.empty {
+  padding: 35px;
+  text-align: center;
+  color: #78847f;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  margin-top: 35px;
+  font-size: 13px;
+  color: #89948f;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+  .role-card,
+  .auth-card,
+  .form-card {
+    padding: 25px 20px;
+  }
+
+  .role-buttons {
+    grid-template-columns: 1fr;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats,
+  .admin-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-header {
+    padding: 12px 18px;
+  }
+
+  .dashboard-header .logo-container h2 {
+    font-size: 17px;
+  }
+
+  .dashboard-header .logo-container p {
+    font-size: 12px;
+  }
+
+  .welcome h1 {
+    font-size: 25px;
+  }
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.form-grid > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-grid label {
+  margin-bottom: 7px;
+  font-weight: 600;
+}
+
+.form-grid input,
+.form-grid select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.form-grid input:focus,
+.form-grid select:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+@media (max-width: 700px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}

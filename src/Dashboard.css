@@ -1,0 +1,546 @@
+* {
+  box-sizing: border-box;
+}
+
+.employee-dashboard {
+  min-height: 100vh;
+  display: flex;
+  background: #f4f7f6;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.dashboard-sidebar {
+  width: 260px;
+  min-height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  padding: 24px 18px;
+  background: linear-gradient(
+    180deg,
+    #123f36,
+    #092a25
+  );
+  color: white;
+}
+
+
+/* SCHOOL */
+
+.dashboard-school {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 4px 5px 24px;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.dashboard-school img {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 50%;
+  background: white;
+}
+
+.dashboard-school h2 {
+  font-size: 13px;
+  margin: 0;
+  letter-spacing: 0.4px;
+}
+
+.dashboard-school p {
+  font-size: 9px;
+  margin: 4px 0 0;
+  opacity: 0.7;
+}
+
+
+/* DASHBOARD TITLE */
+
+.sidebar-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 30px 10px 14px;
+  color: #d9e9e5;
+  font-size: 14px;
+}
+
+
+/* MENU */
+
+.dashboard-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.dashboard-menu-item {
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: #d5e5e1;
+  padding: 13px 14px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  text-align: left;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.dashboard-menu-item:hover {
+  background: rgba(255,255,255,0.1);
+  color: white;
+}
+
+.dashboard-menu-item.active {
+  background: white;
+  color: #123f36;
+  font-weight: bold;
+}
+
+.menu-icon {
+  width: 25px;
+  text-align: center;
+  font-size: 17px;
+}
+
+.logout-item {
+  margin-top: 28px;
+  color: #ffdede;
+}
+
+.logout-item:hover {
+  background: #a83c3c;
+  color: white;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+.dashboard-main {
+  margin-left: 260px;
+  width: calc(100% - 260px);
+  padding: 30px 40px;
+}
+
+
+/* =========================
+   TOP BAR
+========================= */
+
+.dashboard-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.dashboard-topbar h1 {
+  margin: 0;
+  font-size: 27px;
+  color: #183d36;
+}
+
+.dashboard-topbar p {
+  margin: 7px 0 0;
+  color: #7d8985;
+  font-size: 13px;
+}
+
+.topbar-profile {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.notification-icon {
+  font-size: 21px;
+  cursor: pointer;
+}
+
+.small-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.small-profile img,
+.small-profile-placeholder {
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+}
+
+.small-profile img {
+  object-fit: cover;
+}
+
+.small-profile-placeholder {
+  background: #dceae6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-profile strong {
+  display: block;
+  color: #29433d;
+  font-size: 13px;
+}
+
+.small-profile small {
+  color: #89938f;
+  font-size: 11px;
+}
+
+
+/* =========================
+   WELCOME
+========================= */
+
+.welcome-card {
+  min-height: 170px;
+  padding: 30px;
+  border-radius: 18px;
+  background: linear-gradient(
+    120deg,
+    #174c41,
+    #277666
+  );
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 10px 25px rgba(20,70,60,0.15);
+}
+
+.welcome-card span {
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+.welcome-card h2 {
+  font-size: 29px;
+  margin: 8px 0;
+}
+
+.welcome-card p {
+  max-width: 600px;
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.6;
+  opacity: 0.82;
+}
+
+.welcome-icon {
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.14);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+}
+
+
+/* =========================
+   PROFILE
+========================= */
+
+.profile-area {
+  margin-top: 30px;
+}
+
+.section-heading h2 {
+  margin: 0;
+  color: #183d36;
+  font-size: 21px;
+}
+
+.section-heading p {
+  margin: 5px 0 0;
+  color: #89938f;
+  font-size: 13px;
+}
+
+
+/* PROFILE CARD */
+
+.profile-card {
+  margin-top: 17px;
+  padding: 30px;
+  background: white;
+  border-radius: 18px;
+  display: flex;
+  gap: 40px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+
+/* PHOTO */
+
+.photo-area {
+  width: 190px;
+  min-width: 190px;
+  text-align: center;
+  border-right: 1px solid #eeeeee;
+  padding-right: 30px;
+}
+
+.profile-photo {
+  width: 125px;
+  height: 125px;
+  margin: auto;
+  border-radius: 50%;
+  background: #e8f0ee;
+  border: 5px solid #f4f8f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  font-size: 48px;
+}
+
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.upload-photo {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 9px 14px;
+  background: #174c41;
+  color: white;
+  border-radius: 8px;
+  font-size: 11px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.upload-photo:hover {
+  background: #277666;
+}
+
+.photo-area p {
+  color: #9aa39f;
+  font-size: 10px;
+}
+
+
+/* =========================
+   INFORMATION
+========================= */
+
+.employee-information {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.information-box {
+  min-height: 72px;
+  padding: 13px;
+  border-radius: 10px;
+  background: #f7faf9;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.information-icon {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  border-radius: 9px;
+  background: #e0eeea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+}
+
+.information-box small {
+  display: block;
+  color: #89938f;
+  font-size: 10px;
+  margin-bottom: 4px;
+}
+
+.information-box strong {
+  color: #29433d;
+  font-size: 13px;
+  word-break: break-word;
+}
+
+
+/* =========================
+   SELECTED SECTION
+========================= */
+
+.selected-section {
+  margin-top: 25px;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.04);
+}
+
+.selected-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  background: #e1eeeb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.selected-section h2 {
+  margin: 0;
+  color: #183d36;
+  font-size: 18px;
+}
+
+.selected-section p {
+  margin: 5px 0 0;
+  color: #89938f;
+  font-size: 12px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+  .dashboard-sidebar {
+    width: 220px;
+  }
+
+  .dashboard-main {
+    margin-left: 220px;
+    width: calc(100% - 220px);
+    padding: 25px;
+  }
+
+  .profile-card {
+    flex-direction: column;
+  }
+
+  .photo-area {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #eeeeee;
+    padding-right: 0;
+    padding-bottom: 25px;
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .dashboard-sidebar {
+    width: 70px;
+    padding: 20px 10px;
+  }
+
+  .dashboard-school div,
+  .sidebar-title strong,
+  .dashboard-menu-item {
+    font-size: 0;
+  }
+
+  .dashboard-school {
+    justify-content: center;
+  }
+
+  .dashboard-school img {
+    width: 43px;
+    height: 43px;
+  }
+
+  .sidebar-title {
+    justify-content: center;
+  }
+
+  .dashboard-menu-item {
+    justify-content: center;
+  }
+
+  .menu-icon {
+    font-size: 18px;
+  }
+
+  .dashboard-main {
+    margin-left: 70px;
+    width: calc(100% - 70px);
+    padding: 18px;
+  }
+
+  .employee-information {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-topbar h1 {
+    font-size: 20px;
+  }
+
+  .topbar-profile {
+    gap: 5px;
+  }
+
+  .small-profile div:last-child {
+    display: none;
+  }
+
+}
+/* =====================================================
+   ATTENDANCE VERIFICATION - RESPONSIVE SUPPORT
+===================================================== */
+
+.attendance-page {
+  width: 100%;
+}
+
+.attendance-location-card,
+.scanner-box,
+.time-card-item {
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .attendance-top-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .attendance-table-wrapper {
+    overflow-x: auto;
+  }
+
+  .attendance-table {
+    min-width: 700px;
+  }
+}

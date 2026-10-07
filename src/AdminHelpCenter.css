@@ -1,0 +1,167 @@
+/* =====================================================
+   ADMINISTRATOR HELP CENTER
+===================================================== */
+
+.help-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 25px;
+  box-sizing: border-box;
+  color: #222;
+  background: #f8faf9;
+}
+
+/* =====================================================
+   MAIN TITLE
+===================================================== */
+
+.help-container h2 {
+  margin: 0 0 10px;
+  color: #123b2a;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.help-intro {
+  margin: 0 0 25px;
+  color: #555;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* =====================================================
+   HELP SECTIONS
+===================================================== */
+
+.help-section {
+  background: #ffffff;
+  border: 1px solid #e1e7e3;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.05);
+}
+
+.help-section h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #123b2a;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.help-section p {
+  margin: 8px 0 12px;
+  color: #444;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* =====================================================
+   LISTS
+===================================================== */
+
+.help-section ul,
+.help-section ol {
+  margin: 10px 0 5px;
+  padding-left: 25px;
+}
+
+.help-section li {
+  margin-bottom: 8px;
+  color: #444;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.help-section li strong {
+  color: #123b2a;
+}
+
+/* =====================================================
+   ORDERED LIST
+===================================================== */
+
+.help-section ol li::marker {
+  color: #123b2a;
+  font-weight: 700;
+}
+
+/* =====================================================
+   HELP NOTE
+===================================================== */
+
+.help-note {
+  background: #123b2a;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 22px;
+  margin-top: 20px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.help-note h3 {
+  margin: 0 0 10px;
+  font-size: 19px;
+  color: #ffffff;
+}
+
+.help-note p {
+  margin: 8px 0;
+  color: #f1f5f3;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* =====================================================
+   RESPONSIVE DESIGN
+===================================================== */
+
+@media (max-width: 768px) {
+  .help-container {
+    padding: 18px;
+  }
+
+  .help-container h2 {
+    font-size: 24px;
+  }
+
+  .help-section {
+    padding: 17px;
+  }
+
+  .help-section h3 {
+    font-size: 17px;
+  }
+
+  .help-section p,
+  .help-section li,
+  .help-note p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .help-container {
+    padding: 12px;
+  }
+
+  .help-container h2 {
+    font-size: 22px;
+  }
+
+  .help-section {
+    padding: 14px;
+    border-radius: 8px;
+  }
+
+  .help-section ul,
+  .help-section ol {
+    padding-left: 21px;
+  }
+
+  .help-note {
+    padding: 17px;
+  }
+}
